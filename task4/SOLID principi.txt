@@ -1,0 +1,14 @@
+1) SRP (single responsibility principle) je zadovoljen jer je dijagram klasa koncipiran tako da svaka klasa ima svoju odgovornost. Naravno,
+nemoguce je izbjeci medusobno preplitanje klasa u interakciji jedne sa drugom, ali se to nastoji svesti na minimum uvodenjem nasljedivanja i
+raspodjelom poslova i odgovornosti u orkestru.
+
+2) OCP (open/closed principle) je zadovoljen uvodenjem nasljedivanja - najveci problem imamo sa akterima, tako da smo uveli klasu Osoba,
+koja se dalje dijeli na Zaposlenike i Kupce, pri cemu se zaposlenici dalje dijele na više klasa. Ako budemo mijenjali jednu podklasu, ovako
+necemo moci uticati na ostale.
+
+3)LSP (Liskov substitution principle) je zadovoljen zbog gore opisanog nasljedivanja klasa.
+
+4)ISP (interface segregation principle) je zadovoljen zbog toga što cemo implementirati odvojene interfejse za kupovinu na šalteru
+i online kupovinu.
+
+5) DIP (dependency inversion principle) je zadovoljen zbog postojanja klase Osoba.
